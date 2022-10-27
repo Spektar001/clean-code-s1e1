@@ -45,7 +45,7 @@ var createNewTaskElement = function(taskString){
   editInput.className = 'tasks__input tasks__input_text';
 
   editButton.innerText = 'Edit'; //innerText encodes special characters, HTML does not.
-  editButton.className = 'edit';
+  editButton.className = 'button button_edit';
 
   deleteButton.className = 'button button_delete';
   deleteButtonImg.src = './remove.svg';
@@ -105,7 +105,7 @@ var editTask = function(){
   }
 
   //toggle .editmode on the parent.
-	listItem.classList.toggle('tasks__item_edit-mode');
+  listItem.classList.toggle('tasks__item_edit-mode');
 };
 
 
